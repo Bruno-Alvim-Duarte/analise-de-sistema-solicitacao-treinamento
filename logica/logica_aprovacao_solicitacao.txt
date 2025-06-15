@@ -1,0 +1,29 @@
+Função: AprovarSolicitacao(solicitacaoId, usuario)
+
+Entrada: 
+ - solicitacaoId (ID da solicitação a ser aprovada)
+ - usuario (usuário autenticado com atributo "role")
+
+Início:
+  Se usuario.role ≠ 'gestor' Então
+    Retornar "Usuário não autorizado a aprovar solicitações"
+
+  Se solicitacaoId for nulo ou vazio Então
+    Retornar "ID da solicitação não informado"
+
+  Tente:
+   solicitacao ← BuscarSolicitacaoPorId(solicitacaoId)
+
+   Se solicitacao for nula Então
+      Retornar "Solicitação não encontrada"
+
+   Atualizar solicitacao.status para 'aprovado'
+
+   EnviarNotificacaoParaColaborador(solicitacao.colaborador_id)
+
+   Retornar "Solicitação aprovada com sucesso"
+
+  Capture Erro:
+    Retornar "Erro interno do servidor"
+
+Fim
