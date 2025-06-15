@@ -3,7 +3,7 @@
 ## **1. Requisitos Funcionais**
 
 - Os colaboradores devem poder criar novas solicitações de treinamentos;
-- O sistema deve permitir que o colaborador visualize o histórico e status de suas solicitações, agrupadas por status e ordenadas por data;
+- O sistema deve permitir que o colaborador visualize o histórico e status de suas solicitações, e ordenadas por status e data;
 - Os colaboradores poderão ser cadastrados com nome e e-mail;
 - Os colaboradores devem poder visualizar os treinamentos disponíveis antes de realizar uma solicitação;
 - O sistema deve notificar o colaborador quando sua solicitação for aprovada ou rejeitada;
@@ -16,7 +16,7 @@
 - Treinamentos devem ser cadastrados com título e descrição;
 - A listagem de solicitações e treinamentos deve ter paginação;
 - Deve existir um contador com o total de resultados na listagem, atualizado conforme os filtros aplicados;
-- O sistema deve permitir que gestores e RH visualizem e filtrem as solicitações por colaborador, status, data, validação, etc, agrupadas por status e ordenadas por data de criação.
+- O sistema deve permitir que gestores e RH visualizem e filtrem as solicitações por colaborador, status, data, validação, etc, ordenadas por status data de criação.
 
 ## **2. Requisitos Não Funcionais**
 
@@ -87,7 +87,7 @@
     - A lista de solicitações deve ser paginada.
     - Devo poder filtrar as solicitações por: colaborador, treinamento, status, data e validado por rh ou não.
     - A lista deve exibir um contador com o total de resultados encontrados atualizadas com a aplicação de um filtro.
-    - A lista deve ser agrupada por status e ordenada por data de criação.
+    - A lista deve ser ordenada por status e data de criação.
 
 ### Para o Colaborador
 
@@ -96,8 +96,7 @@
 - **Quero** visualizar meu histórico de solicitações de forma organizada,
 - **Para que** eu possa acompanhar o andamento de cada uma de forma clara e rápida.
 - **Critérios de Aceite:**
-    - Minhas solicitações devem estar agrupadas por status.
-    - Dentro de cada grupo de status, as solicitações devem ser ordenadas pela data em que foram criadas (a mais recente primeiro).
+    - Minhas solicitações devem ser ordenadas por status e data em que foram criadas (a mais recente primeiro).
     - A coluna de status deve usar cores para facilitar a identificação visual (amarelo para pendente, verde para aprovado, vermelho para rejeitado).
 
 ## Atores Identificados:
